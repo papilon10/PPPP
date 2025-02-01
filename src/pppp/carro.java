@@ -4,6 +4,8 @@
  */
 package pppp;
 
+import java.awt.Color;
+
 /**
  *
  * @author Apple
@@ -11,5 +13,20 @@ package pppp;
 public class carro {
     String nombre;
     String marca;
+    Color color;
+    
+    public carro(){};
+
+    public carro(String nombre, String marca, Color color) {
+        this.nombre = nombre;
+        this.marca = marca;
+        this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return "carro{" + "nombre=" + nombre + ", marca=" + marca + ", color=" + color + '}';
+    }
+    
     
 }
